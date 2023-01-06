@@ -1,15 +1,19 @@
 <template>
   <div class="activeThumbnail">
-    <p class="activeThumbnail__description">{{ data.en.images[active].description }}</p>
+    <p>{{ lang }}</p>
+    <p class="activeThumbnail__description">
+      {{ data.en.images[active].description }}
+    </p>
 
     <img class="activeThumbnail__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
   </div>
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "ActiveThumbnail",
-  props: ["data", "active"],
+  props: ["data", "active", "lang"],
   data() {
     return {
       //
@@ -17,5 +21,5 @@ export default {
       language: "en",
     };
   },
-};
+});
 </script>

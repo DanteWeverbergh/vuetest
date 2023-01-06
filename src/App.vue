@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <p>{{ language }}</p>
-    <LanguageSelector @update:test="updateTest" />
-    <ActiveThumbnail :data="data.data" :active="activeId" />
-    <Carousel />
+    <p>{{ activeId }}</p>
+    <LanguageSelector @update:lang="updateLang" />
+    <ActiveThumbnail :data="data.data" :active="activeId" :lang="language" />
+    <Carousel @update:thumbnail="updateActiveThumbnail" />
   </div>
 </template>
 
@@ -11,12 +12,13 @@
 import LanguageSelector from "./components/LanguageSelector.vue";
 import ActiveThumbnail from "./components/ActiveThumbnail.vue";
 import Carousel from "./components/Carousel.vue";
+import { defineComponent } from "vue";
 
 import "./assets/styles/main.scss";
 
 const data = require("./assets/data.json");
 
-export default {
+export default defineComponent({
   name: "app",
   data() {
     return {
@@ -34,9 +36,12 @@ export default {
     Carousel,
   },
   methods: {
-    updateTest: function (value: string) {
-      alert("udpate app");
+    updateLang: function (lang: string) {
+      this.language = lang;
+    },
+    updateActiveThumbnail: function (thumbnailId: Number) {
+      alert(thumbnailId);
     },
   },
-};
+});
 </script>

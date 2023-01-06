@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select class="select" v-on:change="languageIsChanged">
+    <select v-model="language" class="select" v-on:change="languageIsChanged">
       <option value="en">English</option>
       <option value="nl">Nederlands</option>
     </select>
@@ -8,15 +8,19 @@
 </template>
 
 <script lang="ts">
-export default {
-  props: ["language"],
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
-    return {};
+    return {
+      language: "en",
+    };
   },
   methods: {
-    languageIsChanged: function (): void {
+    languageIsChanged: function (lang: string): void {
       //
+      this.$emit("update:lang", this.language);
     },
   },
-};
+});
 </script>
