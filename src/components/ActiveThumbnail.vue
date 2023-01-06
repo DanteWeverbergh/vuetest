@@ -1,6 +1,6 @@
 <template>
   <div class="activeThumbnail">
-    <p class="activeThumbnail__description">{{ data.en.images[id].description }}</p>
+    <p class="activeThumbnail__description">{{ data.en.images[active].description }}</p>
 
     <img class="activeThumbnail__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
   </div>
@@ -9,7 +9,7 @@
 <script lang="ts">
 export default {
   name: "ActiveThumbnail",
-  props: ["data"],
+  props: ["data", "active"],
   data() {
     return {
       //

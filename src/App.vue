@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <LanguageSelector />
-    <ActiveThumbnail :data="data.data" />
+    {{ language }}
+    <LanguageSelector :language="language" />
+    <ActiveThumbnail :data="data.data" :active="activeId" />
   </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
   data() {
     return {
       language: "en",
-      active: 1,
+      activeId: 0,
       data: {
         type: Object,
         data,
