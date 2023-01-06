@@ -8,7 +8,23 @@
       },
       {
         "id": 1,
-        "description": "A photo form Valletta made from stone beach on Manoel Island."
+        "description": "A photo form Valletta made from stone beach on Manoel Island.",
+        "src": "valletta.jpg"
+      },
+      {
+        "id": 2,
+        "description": "Main street of valletta during the easter processione.",
+        "src": "vallettaPasen.jpg"
+      },
+      {
+        "id": 3,
+        "description": "Drone shot of the blue lagoon, Comino.",
+        "src": "blueLagoon.jpg"
+      },
+      {
+        "id": 4,
+        "description": "Event photography at one of the largest events in Sint-Niklaas.",
+        "src": "deNacht.jpg"
       }
     ]
   },
@@ -16,11 +32,28 @@
     "images": [
       {
         "id": 0,
-        "description": "Een foto van de kubushuisjes in Rotterdam."
+        "description": "Een foto van de kubushuisjes in Rotterdam.",
+        "src": "rotterdam.jpg"
       },
       {
         "id": 1,
-        "description": "Een foto van Valletta gemaakt vanop stone beach op Manoel Island."
+        "description": "Een foto van Valletta gemaakt vanop stone beach op Manoel Island.",
+        "src": "valletta.jpg"
+      },
+      {
+        "id": 2,
+        "description": "Hoofdstraat van valletta tijdens de paasoptocht.",
+        "src": "vallettaPasen.jpg"
+      },
+      {
+        "id": 3,
+        "description": "Drone foto van de Blue lagoon op Comino.",
+        "src": "blueLagoon.jpg"
+      },
+      {
+        "id": 4,
+        "description": "Foto van op een van de grootste fuiven van sint-niklaas.",
+        "src": "deNacht.jpg"
       }
     ]
   }

@@ -4,7 +4,11 @@
       {{ data.images[active].description }}
     </p>
 
-    <img class="activeThumbnail__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
+    <img
+      class="activeThumbnail__image"
+      alt="active_image"
+      :src="require(`../assets/images/${data.images[active].src}`)"
+    />
   </div>
 </template>
 

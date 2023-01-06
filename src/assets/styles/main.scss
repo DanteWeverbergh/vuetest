@@ -11,21 +11,9 @@ body {
   gap: 25px;
 }
 
-.box1 {
-  background-color: red;
-  height: 100px;
-  width: 100px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.box2 {
-  background-color: green;
-  height: 100px;
-  width: 100px;
+.box {
+  height: 150px;
+  width: 150px;
   border-radius: 25px;
   display: flex;
   justify-content: center;

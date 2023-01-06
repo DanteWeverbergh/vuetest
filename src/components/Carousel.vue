@@ -1,7 +1,20 @@
 <template>
   <div class="carousel">
-    <div class="box1" @click="selectThumbnail(0)">0</div>
-    <div class="box2" @click="selectThumbnail(1)">1</div>
+    <div class="box" @click="selectThumbnail(0)">
+      <img class="carousel__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
+    </div>
+    <div class="box" @click="selectThumbnail(1)">
+      <img class="carousel__image" alt="active_image" src="../assets/images/valletta.jpg" />
+    </div>
+    <div class="box" @click="selectThumbnail(2)">
+      <img class="carousel__image" alt="active_image" src="../assets/images/vallettaPasen.jpg" />
+    </div>
+    <div class="box" @click="selectThumbnail(3)">
+      <img class="carousel__image" alt="active_image" src="../assets/images/blueLagoon.jpg" />
+    </div>
+    <div class="box" @click="selectThumbnail(4)">
+      <img class="carousel__image" alt="active_image" src="../assets/images/deNacht.jpg" />
+    </div>
   </div>
 </template>
 
