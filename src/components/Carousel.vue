@@ -1,19 +1,11 @@
 <template>
   <div class="carousel">
-    <div class="box" @click="selectThumbnail(0)">
-      <img class="carousel__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
-    </div>
-    <div class="box" @click="selectThumbnail(1)">
-      <img class="carousel__image" alt="active_image" src="../assets/images/valletta.jpg" />
-    </div>
-    <div class="box" @click="selectThumbnail(2)">
-      <img class="carousel__image" alt="active_image" src="../assets/images/vallettaPasen.jpg" />
-    </div>
-    <div class="box" @click="selectThumbnail(3)">
-      <img class="carousel__image" alt="active_image" src="../assets/images/blueLagoon.jpg" />
-    </div>
-    <div class="box" @click="selectThumbnail(4)">
-      <img class="carousel__image" alt="active_image" src="../assets/images/deNacht.jpg" />
+    <div class="box" v-for="thumbnail in data.images" @click="selectThumbnail(thumbnail.id)">
+      <img
+        class="carousel__image"
+        alt="active_image"
+        :src="require(`../assets/images/${thumbnail.src}`)"
+      />
     </div>
   </div>
 </template>
@@ -31,6 +23,7 @@ export default defineComponent({
   data() {
     return {};
   },
+  props: ["data"],
   components: { Carousel, Slide },
   methods: {
     selectThumbnail: function (thumbnailId: number): void {

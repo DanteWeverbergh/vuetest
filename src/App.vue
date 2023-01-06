@@ -2,7 +2,7 @@
   <div id="app">
     <LanguageSelector @update:lang="updateLang" />
     <ActiveThumbnail :data="data.data[language]" :active="activeId" :lang="language" />
-    <Carousel @update:thumbnail="updateActiveThumbnail" />
+    <Carousel @update:thumbnail="updateActiveThumbnail" :data="data.data[language]" />
   </div>
 </template>
 
