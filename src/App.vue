@@ -39,8 +39,8 @@ export default defineComponent({
     updateLang: function (lang: string) {
       this.language = lang;
     },
-    updateActiveThumbnail: function (thumbnailId: Number) {
-      alert(thumbnailId);
+    updateActiveThumbnail: function (thumbnailId: number) {
+      this.activeId = thumbnailId;
     },
   },
 });
