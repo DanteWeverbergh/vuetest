@@ -1,0 +1,14 @@
+.activeThumbnail {
+  display: flex;
+  height: 70vh;
+
+  justify-content: space-around;
+  align-items: center;
+  &__description {
+    //
+  }
+  &__image {
+    //
+    height: 75%;
+  }
+}

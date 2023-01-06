@@ -1,0 +1,27 @@
+{
+  "en": {
+    "images": [
+      {
+        "id": 0,
+        "description": "Photo of the cubic houses in Rotterdam.",
+        "src": "../assets/images/rotterdam.jpg"
+      },
+      {
+        "id": 1,
+        "description": "A photo form Valletta made from stone beach on Manoel Island."
+      }
+    ]
+  },
+  "nl": {
+    "images": [
+      {
+        "id": 0,
+        "description": "Een foto van de kubushuisjes in Rotterdam."
+      },
+      {
+        "id": 1,
+        "description": "Een foto van Valletta gemaakt vanop stone beach op Manoel Island."
+      }
+    ]
+  }
+}
