@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select v-model="language" class="select">
+    <select class="select" v-on:change="languageIsChanged">
       <option value="en">English</option>
       <option value="nl">Nederlands</option>
     </select>
@@ -12,6 +12,11 @@ export default {
   props: ["language"],
   data() {
     return {};
+  },
+  methods: {
+    languageIsChanged: function (): void {
+      //
+    },
   },
 };
 </script>

@@ -1,18 +1,27 @@
 <template>
-  <h1>hkmhh</h1>
+  <div class="carousel">
+    <p>{{ active }}</p>
+    <div class="box1" @click="selectThumbnail(0)">0</div>
+    <div class="box2" @click="selectThumbnail(1)">1</div>
+  </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+//import { Carousel, Slide } from "vue-carousel";
+import { defineComponent } from "vue";
 
-@Component
-export default class CarouselComponent extends Vue {
+export default defineComponent({
+  name: "Carousel",
   data() {
     return {
-      active: "1",
+      active: 0,
     };
-  }
-}
+  },
+  components: {},
+  methods: {
+    selectThumbnail: function (thumbnailId: number): void {
+      this.active = thumbnailId;
+    },
+  },
+});
 </script>
