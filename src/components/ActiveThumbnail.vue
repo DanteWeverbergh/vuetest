@@ -1,8 +1,7 @@
 <template>
   <div class="activeThumbnail">
-    <p>{{ lang }}</p>
     <p class="activeThumbnail__description">
-      {{ data.en.images[active].description }}
+      {{ data.images[active].description }}
     </p>
 
     <img class="activeThumbnail__image" alt="active_image" src="../assets/images/rotterdam.jpg" />
@@ -11,6 +10,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+
 export default defineComponent({
   name: "ActiveThumbnail",
   props: ["data", "active", "lang"],

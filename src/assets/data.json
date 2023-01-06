@@ -1,10 +1,10 @@
-{
-  "en": {
+[
+  {
     "images": [
       {
         "id": 0,
         "description": "Photo of the cubic houses in Rotterdam.",
-        "src": "../assets/images/rotterdam.jpg"
+        "src": "rotterdam.jpg"
       },
       {
         "id": 1,
@@ -12,7 +12,7 @@
       }
     ]
   },
-  "nl": {
+  {
     "images": [
       {
         "id": 0,
@@ -24,4 +24,4 @@
       }
     ]
   }
-}
+]

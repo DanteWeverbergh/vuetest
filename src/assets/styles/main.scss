@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .carousel {
@@ -31,5 +33,10 @@ body {
   cursor: pointer;
 }
 
+.slide {
+  background-color: yellow;
+}
+
 @import 'components/select';
 @import 'components/activeThumbnail';
+@import 'components/carousel';

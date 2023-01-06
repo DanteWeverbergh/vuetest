@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select v-model="language" class="select" v-on:change="languageIsChanged">
+    <select v-model="language" class="select" @change="languageIsChanged">
       <option value="en">English</option>
       <option value="nl">Nederlands</option>
     </select>

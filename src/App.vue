@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <p>{{ language }}</p>
-    <p>{{ activeId }}</p>
     <LanguageSelector @update:lang="updateLang" />
-    <ActiveThumbnail :data="data.data" :active="activeId" :lang="language" />
+    <ActiveThumbnail :data="data.data[language]" :active="activeId" :lang="language" />
     <Carousel @update:thumbnail="updateActiveThumbnail" />
   </div>
 </template>
@@ -22,7 +20,7 @@ export default defineComponent({
   name: "app",
   data() {
     return {
-      language: "en",
+      language: "0",
       activeId: 0,
       data: {
         type: Object,
@@ -38,6 +36,11 @@ export default defineComponent({
   methods: {
     updateLang: function (lang: string) {
       this.language = lang;
+      if (lang === "en") {
+        this.language = "0";
+      } else if (lang === "nl") {
+        this.language = "1";
+      }
     },
     updateActiveThumbnail: function (thumbnailId: number) {
       this.activeId = thumbnailId;
